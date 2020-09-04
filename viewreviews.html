@@ -8,8 +8,12 @@
 </head>
 <body>
   <nav>
-    <a href="index.html"><div class="tooltip"><img src="img/logo.png" id="logo" alt="Abyss Reviews logo, click to go to homepage"><span>Home</span></div></a>
-    <div class="menu" id="menu-toggle">MENU</div>
+    <img src="img/logo.png" id="logo" onclick="location.ref='index.html'"alt="Abyss Reviews logo, click to go to homepage">
+    <div class="menu" id="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
     <div class="right-nav" id="right-nav">
       <a href="index.html">Home</a>
       <a href="viewreviews.html">View Reviews</a>
@@ -17,29 +21,40 @@
       <a href="externalreviews.html">Other Reviewers</a>
     </div>
   </nav>
-  
-  <h1>View Reviews</h1>
-  
-  <main>
-    <h2>Enter a game name below to search for reviews</h2>
-	<label for="gameName">Game:</label>
-    <input placeholder="game name" id="gameName">
-    <button id="loadReviews">Load Reviews</button><br><br>
-    <h2 id="gameTitle">Game Title</h2>
-    <div class="table" id="table">
-      <div class="table-row">
-        <div class="left-table-header">
-          <h3 class=heading>Star Rating</h3>
+
+  <div class="container">
+    <div class="row-heading bgGrey">
+        <h1>View Reviews</h1>
+        <hr>
+        <p class="desc">Enter a game name below to search for reviews</p>
+    </div>
+    <div class="row">
+    <div class="col-outer left"></div>
+    <div class="col-inner">
+    <div class="row bgGrey">
+      <div class="row-centered bgLightPurple paddingMedium">
+        <div class="col-left-sm">
+          <label for="gameName">Game:</label>
         </div>
-		
-        <div class="right-table-header">
-          <h3 class=heading>Review</h3>
+        <div class="col-right-lg">
+          <input type="text" placeholder="Enter game name here" id="gameName">
         </div>
       </div>
-    </div><br>
-  </main>
+    </div>
 
-  <script src="js/scripts.js"></script>
-  <script src="js/loadreviews.js"></script>
+    <div class="row bgGrey">
+      <div class="row-centered bgLightPurple paddingSmallBottom">
+        <button id="loadReviews">Load Reviews</button>
+      </div>
+    </div>
+    <div class="row bgGrey paddingMedium">
+      <div class="reviewsContainer" id="reviewsContainer"></div>
+    </div>
+    </div>
+    <div class="col-outer right"></div>
+  </div>
+</div>
 </body>
+<script src="js/scripts.js"></script>
+<script src="js/loadreviews.js"></script>
 </html>

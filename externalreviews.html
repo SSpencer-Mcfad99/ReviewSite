@@ -8,8 +8,12 @@
 </head>
 <body>
   <nav>
-    <a href="index.html"><div class="tooltip"><img src="img/logo.png" id="logo" alt="Abyss Reviews logo, click to go to homepage"><span>Home</span></div></a>
-    <div class="menu" id="menu-toggle">MENU</div>
+    <img src="img/logo.png" id="logo" onclick="location.ref='index.html'"alt="Abyss Reviews logo, click to go to homepage">
+    <div class="menu" id="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
     <div class="right-nav" id="right-nav">
       <a href="index.html">Home</a>
       <a href="viewreviews.html">View Reviews</a>
@@ -17,107 +21,148 @@
       <a href="externalreviews.html">Other Reviewers</a>
     </div>
   </nav>
-  
-  <h1>External Reviews</h1>
-  
-  <main>
-    <p>For those that wish to explore other reviewers' opinions, you can click the 
-    logos of the other reviewing websites in the left column of the table in each row.</p>
-	<h2>Reviewers</h2>
-    <div class="table">
-      <div class="table-row">
-        <div class="left-table-header">
-          <h3 class=heading>Reviewer</h3>
-        </div>
-		
-        <div class="right-table-header">
-          <h3 class=heading>Description</h3>
+
+  <div class="container">
+     <div class="row-heading bgGrey">
+         <h1>External Reviews</h1>
+         <hr class="heading">
+         <p class="desc">A list of other reviewing sites (click logos to access them)!</p>
+    </div>
+    <div class="row bgGrey">
+       <div class="row-centered">
+         <div class="col-outer left">&nbsp;</div>
+         <div class="col-inner">
+           <div class="row bgPurple paddingSmall">
+             <div class="col-extrev-left-sm">
+                <div class="comp-container">
+                  <h2>IGN</h2>
+                </div>
+                <div class="logo-container">
+                  <a href="https://uk.ign.com/reviews/games"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/IGN_Entertainment_Logo.svg" id="ign" alt="ign"></a>
+                </div>
+             </div>
+             <div class="col-extrev-right-lg">
+               <p>IGN is a worldwide known video game and media website known across the world.
+               They are also known for their reviews on many games. They were founded in 1996 by
+               Chris Anderson.</p>
+             </div>
+           </div>
+           <div class="row bgPurple">
+               <hr class="txtBlack">
+           </div>
+           <div class="row bgPurple paddingSmall">
+             <div class="col-extrev-left-lg">
+                <p>Destructoid is a website that was originally a video-game blog founded by Yanier Gonzalez
+                in 2006. It's known to produce video game news and stories. It was taken over by Enthusiast Gaming
+                in 2017. Their mascot, Mr Destructoid has featured in many PC and console games.</p>
+             </div>
+             <div class="col-extrev-right-sm">
+               <div class="comp-container">
+                 <h2>Destructoid</h2>
+               </div>
+               <div class="logo-container">
+                 <a href="https://www.destructoid.com/"><img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Destructoid-logo.png" id="destructoid" alt="destructoid"></a>
+               </div>
+
+             </div>
+           </div>
+           <div class="row bgPurple">
+              <hr class="txtBlack">
+           </div>
+           <div class="row bgPurple paddingSmall">
+             <div class="col-extrev-left-sm">
+               <div class="comp-container">
+                 <h2>Game Informer</h2>
+               </div>
+               <div class="logo-container">
+                 <a href="https://www.gameinformer.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Game_Informer_logo_%282010-present%29.png" id="game-informer" alt="game-informer"></a>
+               </div>
+             </div>
+             <div class="col-extrev-right-lg">
+               <p>Game Informer is a monthly video game magazine in America that contains reviews, news and articles of video games.
+               It was founded in 1991 by FuncoLand and is currently owned by GameStop Corp. Game Informer also posts their reviews
+               on their website.</p>
+             </div>
+           </div>
+           <div class="row bgPurple">
+               <hr class="txtBlack">
+          </div>
+           <div class="row bgPurple paddingSmall">
+             <div class="col-extrev-left-lg">
+               <p>Metacritic is a website which has a score for each game based on other reviewers. They have links to these other
+               reviewers and are essentially similar to RottenTomatoes (a film/tv based version of it). It was founded in 1999.</p>
+             </div>
+             <div class="col-extrev-right-sm">
+               <div class="comp-container">
+                 <h2>Metacritic</h2>
+               </div>
+               <div class="logo-container">
+                 <a href="https://www.metacritic.com/game"><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Metacritic_logo.svg" id="metacritic" alt="metacritic"></a>
+               </div>
+             </div>
+           </div>
+           <div class="row bgPurple">
+               <hr class="txtBlack">
+           </div>
+
+           <div class="row bgPurple paddingSmall">
+             <div class="col-extrev-left-sm">
+               <div class="comp-container">
+                 <h2>Nintendo Life</h2>
+               </div>
+               <div class="logo-container">
+                 <a href="http://www.nintendolife.com/"><img src="https://nlife.com/images/2_5925c88c41f1e609686927/720x.png" id="nintendo-life" alt="nintendo-life"></a>
+               </div>
+             </div>
+             <div class="col-extrev-right-lg">
+               <p>Nintendo Life is a website focussed on news and reviews of Nintendo products including video games. It was founded
+                in 2005 by Nlife Media.</p>
+             </div>
+           </div>
+           <div class="row bgPurple">
+               <hr class="txtBlack">
+           </div>
+           <div class="row bgPurple paddingSmall">
+             <div class="col-extrev-left-lg">
+               <p>Gamespot is a website that provides news, information and reviews on many games. It was founded in 1996 when some
+               employees left IDG and founded Spotmedia Communications. It is one of the most renown game reviewing platform in the world.</p>
+             </div>
+             <div class="col-extrev-right-sm">
+               <div class="comp-container">
+                 <h2>Gamespot</h2>
+               </div>
+               <div class="logo-container">
+                 <a href="https://www.gamespot.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Logo_of_GameSpot.svg" id="gamespot" alt="gamespot"></a>
+               </div>
+             </div>
+           </div>
+           <div class="row bgPurple">
+               <hr class="txtBlack">
+          </div>
+
+           <div class="row bgPurple paddingSmall">
+             <div class="col-extrev-left-sm">
+               <div class="comp-container">
+                 <h2>Christ Centered Gamer</h2>
+               </div>
+               <div class="logo-container">
+                 <a href="https://www.christcenteredgamer.com/"><img src="https://www.christcenteredgamer.com/templates/gamers/images/s5_logo.png" id="christ-centered-gamer" alt="christ-centered-gamer"></a>
+               </div>
+             </div>
+             <div class="col-extrev-right-lg">
+               <p>Christ Centered Gamer is a reviewing site that includes very clear reviews and questions the ethics of some reviewing sites.
+               It puts two scores for each game: one for technical (gameplay, controls, etc); and one for morality (language, gore, etc). It
+               was founded in 2007.</p>
+             </div>
+           </div>
+         </div>
+         <div class="col-outer right">&nbsp;</div>
         </div>
       </div>
-	  
-      <div class="table-row">
-        <div class="left-table-cell">
-          <a href="https://uk.ign.com/reviews/games"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/IGN_Entertainment_Logo.svg" id="ign" alt="ign"></a>
-        </div>
-		
-        <div class="right-table-cell">
-          <p>IGN is a worldwide known video game and media website known across the world.
-          They are also known for their reviews on many games. They were founded in 1996 by
-          Chris Anderson.</p>
-        </div>
-      </div>
-	  
-      <div class="table-row">
-        <div class="left-table-cell">
-          <a href="https://www.destructoid.com/"><img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Destructoid-logo.png" id="destructoid" alt="destructoid"></a>
-        </div>
-		
-        <div class="right-table-cell">
-          <p>Destructoid is a website that was originally a video-game blog founded by Yanier Gonzalez
-          in 2006. It's known to produce video game news and stories. It was taken over by Enthusiast Gaming
-          in 2017. Their mascot, Mr Destructoid has featured in many PC and console games.</p>
-        </div>
-      </div>
-	  
-      <div class="table-row">
-        <div class="left-table-cell">
-          <a href="https://www.gameinformer.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Game_Informer_logo_%282010-present%29.png" id="game-informer" alt="game-informer"></a>
-        </div>
-		
-        <div class="right-table-cell">
-          <p>Game Informer is a monthly video game magazine in America that contains reviews, news and articles of video games.
-          It was founded in 1991 by FuncoLand and is currently owned by GameStop Corp. Game Informer also posts their reviews
-          on their website.</p>
-        </div>
-      </div>
-	  
-      <div class="table-row">
-        <div class="left-table-cell">
-          <a href="https://www.metacritic.com/game"><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Metacritic_logo.svg" id="metacritic" alt="metacritic"></a>
-        </div>
-		
-        <div class="right-table-cell">
-          <p>Metacritic is a website which has a score for each game based on other reviewers. They have links to these other
-          reviewers and are essentially similar to RottenTomatoes (a film/tv based version of it). It was founded in 1999.</p>
-        </div>
-      </div>
-	  
-      <div class="table-row">
-        <div class="left-table-cell">
-          <a href="http://www.nintendolife.com/"><img src="https://nlife.com/images/2_5925c88c41f1e609686927/720x.png" id="nintendo-life" alt="nintendo-life"></a>
-        </div>
-		
-        <div class="right-table-cell">
-          <p>Nintendo Life is a website focussed on news and reviews of Nintendo products including video games. It was founded
-          in 2005 by Nlife Media.</p>
-        </div>
-      </div>
-	  
-      <div class="table-row">
-        <div class="left-table-cell">
-          <a href="https://www.gamespot.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Logo_of_GameSpot.svg" id="gamespot" alt="gamespot"></a>
-        </div>
-		
-        <div class="right-table-cell">
-          <p>Gamespot is a website that provides news, information and reviews on many games. It was founded in 1996 when some
-          employees left IDG and founded Spotmedia Communications. It is one of the most renown game reviewing platform in the world.</p>
-        </div>
-      </div>
-	  
-      <div class="table-row">
-        <div class="left-table-cell">
-          <a href="https://www.christcenteredgamer.com/"><img src="https://www.christcenteredgamer.com/templates/gamers/images/s5_logo.png" id="christ-centered-gamer" alt="christ-centered-gamer"></a>
-        </div>
-		
-        <div class="right-table-cell">
-          <p>Christ Centered Gamer is a reviewing site that includes very clear reviews and questions the ethics of some reviewing sites.
-          It puts two scores for each game: one for technical (gameplay, controls, etc); and one for morality (language, gore, etc). It
-          was founded in 2007.</p>
-        </div>
+      <div class="row">
+       <div class="row bgGrey paddingSmall">&nbsp;</div>
       </div>
     </div>
-  </main>
-
+  </body>
   <script src="js/scripts.js"></script>
-</body>
 </html>

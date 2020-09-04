@@ -3,310 +3,437 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
-  #logo {
-    width: 100px;
-    height: 60px;  
-  }
-  
-  #ign, #destructoid {
-    width: 80%;
-    height: 40%;  
-  }
-  
-  #metacritic, #nintendo-life, #gamespot, #christ-centered-gamer {
-    width: 100px;
-    height: 40px;    
-  }
-  
-  #game-informer {
-    width: 100px;
-    height: 30px;  
-  }
-  
-  #search {
-    width: 30%;
-    margin:0 30% 0 1%;   
-  }
-  
-  #load {
-    float: right; 
-  }
-  
-  body {
-    background: #7DC8DB;
-    margin: 0;
-    text-align: center;
-  } 
-  
-  p, h1, h2, h3 {
-    font-family: arial, sans-serif;
-    text-align: center;
-  }
-  
-  span {
-    font-size: 8pt;  
-  }
-  
-  h1, h2 {
-    font-size: 16pt; 
-  }
-  
-  h3 {
-    font-size: 14pt;
-  }
-  
-  p {
-    font-size: 10pt;   
-  }
-  
-  label, input{
-    display: inline-block;
-  }
+html, body {
+  margin: 0;
+  border: 0;
+}
 
-  form {
-    width: 70%;
-    margin: 0 auto;
-  }
+body {
+  background-color: #4D4D80;
+}
+
+nav {
+  display: flex;
+  clear: both;
+  width: 100%;
+  background: #222668;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  padding: 1.25em .25em;
+  color: #ccc;
+  background: #222668;
+  text-decoration: none;
+  transition: all 1.5s;
+}
+
+p, h1, h2, h3, a {
+  font-family: Helvetica, sans-serif;
+}
+
+p {
+  font-size: 10pt;
+  color: black;
+}
+
+h1 {
+  font-size: 16pt;
+}
+
+h1, .desc {
+  color: white;
+}
 
 
-  label {
-    width:20%;
-    font-size: 10pt;
-    text-align: right;
-  }
+hr {
+  width: 60%;
+}
 
-  label + input {
-    width: 40%;    
-    margin:0 30% 0 1%;
-  }
-  
-  label + textarea {
-    width: 35%;
-    margin:0 30% 0 3%; 
-  }
-  
-  form {
-    background-color: #6390CB;
-  }
-  
-  nav {
-    display: flex;
-    clear: both;
-    width: 100%;
-    background: #222668;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav a {
-    padding: 1.25em .25em;
-    color: #ccc;
-    background: #222668;
-    text-decoration: none;
-    transition: all 1.5s;
-  }
-  
-  .central {
-    text-align: center;
-  }
-  
-  .menu {
-    text-align: center;
-    color: #fff;
-    line-height: 2em;
-    position: relative;
-  }
+h2 {
+  font-size: 14pt;
+  color: black;
+}
 
-  .right-nav {
-    display: none;  
-    clear: both;
-  }
-  
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .table {
-    display: table;
-    width: 99.9%;
-    border-collapse: collapse;
-  }
-  
-  .table-row {
-    display: table-row;
-  }
-  
-  .left-table-header, .left-table-cell, .right-table-header, .right-table-cell {
-    display: table-cell;
-    padding:1em;
-    border: 1px solid;  
-  }
-  
-  .left-table-header, .left-table-cell {
-    width: 40%;
-  }
-  
-  .right-table-header, .right-table-cell {
-    width: 60%;
-  }
-  
-  .left-table-header, .right-table-header {
-    background-color: purple; 
-  }
-  
-  .heading {
-	color: white;
-  }
-  
-  .left-table-cell, .right-table-cell {
-    vertical-align: middle;
-  }
-  
-  .star-container {
-    display: inline-block;
-    position: relative;
-    direction: rtl;
-  }
-  
-  .rating-star, #star {
-    unicode-bidi: bidi-override;
-  }
-  
-  label + .star-container {
-    width: 40%;
-    margin:0 30% 0 1%; 
-  }
-  
-  .rating-star:after {
-    content: "\2606"; 
+h3, label, span {
+  font-size: 12pt;
+  color: black;
+}
+
+.desc {
+  font-size: 14pt;
+  font-style: italic;
+}
+
+#logo {
+  width: 100px;
+  height: 60px;
+}
+
+#ign, #destructoid {
+  width: 80%;
+  height: 40%;
+}
+
+#metacritic, #nintendo-life, #gamespot, #christ-centered-gamer {
+  width: 100px;
+  height: 40px;
+}
+
+#game-informer {
+  width: 100px;
+  height: 30px;
+}
+
+.menu {
+  text-align: center;
+  color: #fff;
+  line-height: 2em;
+  position: relative;
+}
+.right-nav {
+  display: none;
+  clear: both;
+}
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  min-width: 35px;
+  max-width: 45px;
+  height: 6px;
+  background-color: white;
+  margin: 10px 10px;
+}
+
+
+
+.container, .reviewsContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.rule-container {
+  width: 100%;
+}
+
+.comp-container {
+  width: 100%;
+
+}
+
+.logo-container {
+  width: 100%;
+}
+
+.star-container {
+  display: inline-block;
+  position: relative;
+  direction: rtl;
+  width: 100%;
+}
+
+.rating-star, #star {
+  unicode-bidi: bidi-override;
+  width: 20%
+}
+
+.rating-star:after {
+    content: "\2606";
     color: white;
-  }
-  
+}
+
   .star-container > .rating-star:hover:after,
   .star-container > .rating-star:hover ~ .rating-star:after, #star:after {
     content: "\2605";
     color: yellow;
   }
-  
-  .tooltip span {
-    display: none;
-    position: relative;
-    font-size: 12pt;
-  }
-  
-  .tooltip:hover span {
-    display: flex;
-    justify-content: center;  
-  }
-  
+
+.stars-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+#star {
+  position: relative;
+  top: 25%;
+}
+
+.rating-container {
+  position: relative;
+  width: 60%;
+  left: 20%;
+  min-height: 50px;
+}
+
+.row-heading{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+}
+
+.row-centered{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  left: 10%;
+  width: 80%;
+}
+
+.review-container {
+  position: relative;
+  text-align: center;
+  left: 10%;
+  width: 80%;
+  min-height: 50px;
+  max-height: 300px;
+}
+
+input[type=text], textarea {
+  position: relative;
+  width: 90%;
+}
+
+button, .buttonDel {
+  position: relative;
+  width: 20%;
+  left: 40%;
+}
+
+.texting {
+  height: 50px;
+}
+
+.starlight {
+  height: 50px;
+}
+
+.textareas {
+  min-height:100px;
+  max-height: 300px;
+}
+
+.uploading {
+  height: 50px;
+}
+
+#upload {
+  position: relative;
+  top:15%;
+  height: 70%;
+}
+
+.buttonDelRow {
+  height: 50px;
+}
+
+.buttonDel {
+  top: 20%;
+  height: 60%;
+}
+
+.col-left, .col-extrev-left-sm,.col-extrev-left-lg , .col-left-sm {
+    float: left;
+}
+
+.col-extrev-left-lg, .col-extrev-right-lg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+}
+.col-left {
+  width: 50%;
+}
+
+.col-extrev-left-sm {
+  width: 40%;
+}
+
+.col-extrev-left-lg {
+  width: 60%;
+}
+
+.col-left-sm {
+  width: 25%;
+}
+
+.col-right, .col-extrev-right-sm,.col-extrev-right-lg , .col-right-lg {
+    float: right;
+}
+
+.col-right {
+  float:right;
+  width: 50%;
+}
+
+.col-extrev-right-sm {
+  width: 40%;
+}
+
+.col-extrev-right-lg {
+  width: 60%;
+}
+
+.col-right-lg {
+  width: 75%;
+}
+
+.col-inner {
+  width:80%;
+}
+
+.col-outer {
+ width:10%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.bgGrey {
+  background-color: #4D4D80;
+}
+
+.bgLightPurple {
+  background-color: #BFBFFE;
+}
+
+.bgPurple {
+  background-color: #8080FE;
+}
+
+.centered, .desc {
+  align-items:center;
+}
+
+.paddingSmall {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.paddingSmallTop {
+  padding-top: 20px;
+}
+
+.paddingSmallBottom {
+  padding-bottom: 20px;
+}
+
+.paddingMedium {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.paddingMediumBottom {
+  padding-bottom: 40px;
+}
+.txtBlack {
+  background-color: black;
+  border-color: black;
+  color: black;
+}
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
   #logo {
-    width: 140px;
-    height: 100px;
-  }
-  
-  #ign, #destructoid {
-    width: 100px;
-    height: 100px;  
-  }
-  
-  #metacritic, #nintendo-life, #gamespot {
-    width: 100px;
-    height: 40px;   
-  }
-  
-  #christ-centered-gamer {
-    width: 100px;
-    height: 60px; 
-  }
-  
-  #game-informer {
-    width: 100px;
-    height: 30px;  
-  }
-  
-  .right-nav {
-    display: flex;  
-    flex-direction: row;
-  }
-  
-  form {
-    background-color: #222668;
-    color: #ccc;
-  }
-  
-  nav a:hover { 
-    color: #dfd;
-    background: #3E40AE;
-  }
-  
-  nav, nav:hover { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav a {
-    padding: 1.25em .3em;  
-    justify-content: flex-end; 
-  }
-  
-  main {
-    width: 75%;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    background-color: #6390CB;  
-    text-align: center;
-  }  
-  
-  span {
-    font-size: 9pt;
-  }
-  
-  p, ol {
-    font-family: arial, sans-serif;
-    font-size: 16pt;
-  }
-  
-  h1, h2{
-    font-family: arial, sans-serif;
-    font-size: 20pt; 
-  }
-  
-  ol {
-    list-style-position: outside;
-    text-align: left;
-  }
-  
-  li {
-    margin-bottom: .5em
-  }
-  
-  label {
-    font-size: 12pt;
-  }
-  
-  label + textarea {
-    width: 40%;
-    margin:0 30% 0 1%; 
-  }
-  
-  label + .star-container {
-    width: 40%;
-    margin:0 30% 0 1%; 
-  }
-  
-  .menu { 
-    display: none;
-  }
+      width: 140px;
+      height: 100px;
+    }
+
+    #ign, #destructoid {
+      width: 100px;
+      height: 100px;
+    }
+
+    #metacritic, #nintendo-life, #gamespot {
+      width: 100px;
+      height: 40px;
+    }
+
+    #christ-centered-gamer {
+      width: 100px;
+      height: 60px;
+    }
+
+    #game-informer {
+      width: 100px;
+      height: 30px;
+    }
+
+    .right-nav {
+      display: flex;
+      flex-direction: row;
+    }
+
+    form {
+      background-color: #222668;
+      color: #ccc;
+    }
+
+    nav a:hover {
+      color: #dfd;
+      background: #3E40AE;
+    }
+
+    nav, nav:hover {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      padding: 1.25em .3em;
+      justify-content: flex-end;
+    }
+
+    p, ol {
+        font-family: arial, sans-serif;
+        font-size: 16pt;
+      }
+
+      h1, h2{
+        font-family: arial, sans-serif;
+        font-size: 20pt;
+      }
+
+      ol {
+        list-style-position: outside;
+        text-align: left;
+      }
+
+      li {
+        margin-bottom: .5em
+      }
+
+      .menu {
+        display: none;
+     }
 }
 
 /* DESKTOP STYLES */
@@ -315,35 +442,28 @@
 
   /* applies to screens wider than 999px */
 
-  body {
-    background: #7DC8DB;
-  } 
-  
   nav a {
-    padding: 1.25em 1em;  
-  }
-  
-  #ign, #destructoid {
-    width: 150px;
-    height: 150px;  
-  }
-  
-  #metacritic, #nintendo-life, #gamespot {
-    width: 150px;
-    height: 65px;   
-  }
-  
-  #christ-centered-gamer {
-    width: 150px;
-    height: 80px; 
-  }
-  
-  #game-informer {
-    width: 150px;
-    height: 55px;  
-  }
-  
-  .rating-star {
-    font-size: 12pt;
-  } 
+      padding: 1.25em 1em;
+    }
+
+    #ign, #destructoid {
+      width: 150px;
+      height: 150px;
+    }
+
+    #metacritic, #nintendo-life, #gamespot {
+      width: 150px;
+      height: 65px;
+    }
+
+    #christ-centered-gamer {
+      width: 150px;
+      height: 80px;
+    }
+
+    #game-informer {
+      width: 150px;
+      height: 55px;
+    }
+
 }
