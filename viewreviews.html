@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P17206266</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html"><div class="tooltip"><img src="img/logo.png" id="logo" alt="Abyss Reviews logo, click to go to homepage"><span>Home</span></div></a>
+    <div class="menu" id="menu-toggle">MENU</div>
+    <div class="right-nav" id="right-nav">
+      <a href="index.html">Home</a>
+      <a href="viewreviews.html">View Reviews</a>
+      <a href="createreviews.html">Create Review</a>
+      <a href="externalreviews.html">Other Reviewers</a>
+    </div>
+  </nav>
+  
+  <h1>View Reviews</h1>
+  
+  <main>
+    <h2>Enter a game name below to search for reviews</h2>
+	<label for="gameName">Game:</label>
+    <input placeholder="game name" id="gameName">
+    <button id="loadReviews">Load Reviews</button><br><br>
+    <h2 id="gameTitle">Game Title</h2>
+    <div class="table" id="table">
+      <div class="table-row">
+        <div class="left-table-header">
+          <h3 class=heading>Star Rating</h3>
+        </div>
+		
+        <div class="right-table-header">
+          <h3 class=heading>Review</h3>
+        </div>
+      </div>
+    </div><br>
+  </main>
+
+  <script src="js/scripts.js"></script>
+  <script src="js/loadreviews.js"></script>
+</body>
+</html>
