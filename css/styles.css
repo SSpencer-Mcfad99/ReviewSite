@@ -68,35 +68,40 @@ h3, label, span {
 }
 
 #logo {
+  float: left;
   width: 100px;
   height: 60px;
 }
 
 #ign, #destructoid {
   width: 80%;
-  height: 40%;
+  height: 100%;
 }
 
 #metacritic, #nintendo-life, #gamespot, #christ-centered-gamer {
-  width: 100px;
+  width: 45%;
   height: 40px;
 }
 
 #game-informer {
-  width: 100px;
+  width: 40%;
   height: 30px;
 }
 
 .menu {
+  left: 50%;
+  width:15%;
   text-align: center;
   color: #fff;
   line-height: 2em;
   position: relative;
 }
+
 .right-nav {
   display: none;
   clear: both;
 }
+
 .menu-toggle {
   display: flex;
   flex-direction: column;
@@ -112,7 +117,7 @@ h3, label, span {
 
 
 
-.container, .reviewsContainer {
+.container, .reviewsContainer, .left-nav {
   width: 100%;
   text-align: center;
 }
@@ -121,13 +126,13 @@ h3, label, span {
   width: 100%;
 }
 
-.comp-container {
+.comp-container, .logo-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
 
-}
-
-.logo-container {
-  width: 100%;
 }
 
 .star-container {
@@ -213,8 +218,8 @@ input[type=text], textarea {
 
 button, .buttonDel {
   position: relative;
-  width: 20%;
-  left: 40%;
+  width: 40%;
+  left: 30%;
 }
 
 .texting {
@@ -253,22 +258,12 @@ button, .buttonDel {
     float: left;
 }
 
-.col-extrev-left-lg, .col-extrev-right-lg {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  vertical-align: middle;
+.col-extrev-left-sm, .col-extrev-left-lg , .col-extrev-right-sm, .col-extrev-right-lg {
+  position: relative;
 }
+
 .col-left {
-  width: 50%;
-}
-
-.col-extrev-left-sm {
-  width: 40%;
-}
-
-.col-extrev-left-lg {
-  width: 60%;
+  width: 100%;
 }
 
 .col-left-sm {
@@ -280,16 +275,26 @@ button, .buttonDel {
 }
 
 .col-right {
-  float:right;
-  width: 50%;
+  width: 100%;
 }
 
-.col-extrev-right-sm {
-  width: 40%;
+.col-extrev-left-sm, .col-extrev-right-sm {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
 }
 
-.col-extrev-right-lg {
-  width: 60%;
+ .col-extrev-left-lg, .col-extrev-right-lg{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  width: 100%;
 }
 
 .col-right-lg {
@@ -302,6 +307,26 @@ button, .buttonDel {
 
 .col-outer {
  width:10%;
+}
+
+.ext-inner {
+  left: 10%;
+}
+
+.smallCol, .smallCol-centered {
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.smallRow {
+  flex-direction: row;
+  position: relative;
+  display: flex;
+  text-align: center;
+  width: 100%;
 }
 
 .left {
@@ -349,6 +374,10 @@ button, .buttonDel {
 .paddingMediumBottom {
   padding-bottom: 40px;
 }
+
+.paddingLargeBottom {
+  padding-bottom: 100px;
+}
 .txtBlack {
   background-color: black;
   border-color: black;
@@ -385,9 +414,56 @@ button, .buttonDel {
       height: 30px;
     }
 
+    .left-nav {
+      width: 20%;
+    }
+
     .right-nav {
       display: flex;
       flex-direction: row;
+    }
+
+    .col-left, .col-right {
+      flex-direction: column;
+      width: 50%;
+    }
+
+    .col-extrev-right-sm, .col-extrev-right-lg {
+      flex-direction: column;
+      margin-left: 20px;
+      order: 2;
+    }
+
+    .col-extrev-left-sm, .col-extrev-left-lg {
+      flex-direction: column;
+      margin-left: 20px;
+      order: 1;
+    }
+
+    .col-extrev-right-sm, .col-extrev-left-sm {
+      width: 40%;
+    }
+
+    .col-extrev-right-lg, .col-extrev-left-lg {
+      width: 60%;
+    }
+
+    .smallCol, .smallCol-centered {
+      flex-direction: row;
+    }
+
+    .smallCol-centered {
+       left: 10%;
+       width:80%;
+       justify-content: center;
+    }
+
+    .ext-inner {
+      left: 0;
+    }
+
+    .smallRow {
+      flex-direction: column;
     }
 
     form {
@@ -429,6 +505,12 @@ button, .buttonDel {
 
       li {
         margin-bottom: .5em
+      }
+
+      button, .buttonDel {
+        position: relative;
+        width: 20%;
+        left: 40%;
       }
 
       .menu {
