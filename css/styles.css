@@ -306,12 +306,24 @@ button, .buttonDel {
   width: 75%;
 }
 
-.col-inner, .full-col-inner {
+.col-inner {
   width:80%;
 }
 
-.col-outer, .full-col-outer {
+.col-outer{
  width:10%;
+}
+
+.full-col-inner {
+  width: 90%;
+}
+
+.full-col-outer {
+  width: 5%;
+}
+
+.full-col-outer-left {
+  width: 1%;
 }
 
 .ext-inner {
