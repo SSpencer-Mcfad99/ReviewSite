@@ -13,9 +13,13 @@ body {
 }
 
 nav {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  border: 0;
+  top: 0;
   display: flex;
   clear: both;
-  width: 100%;
   background: #222668;
   flex-direction: column;
   align-items:flex-start;
@@ -28,6 +32,10 @@ nav a {
   position: relative;
   text-decoration: none;
   transition: all 1.5s;
+}
+
+.top {
+  margin-top:80px;
 }
 
 p, h1, h2, h3, a {
@@ -182,6 +190,7 @@ h3, label, span {
   flex-direction: column;
   text-align: center;
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .row {
@@ -420,6 +429,10 @@ button, .buttonDel {
       display: flex;
       flex-direction: row;
       justify-content: center;
+    }
+
+    .top {
+      margin-top:110px;
     }
 
     .col-left, .col-right {
