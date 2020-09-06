@@ -122,8 +122,6 @@ h3, label, span {
   margin: 12px 10px;
 }
 
-
-
 .container, .reviewsContainer, .left-nav {
   width: 100%;
   text-align: center;
@@ -201,7 +199,7 @@ h3, label, span {
   width: 100%;
 }
 
-.row-centered{
+.row-centered, .full-row{
   position: relative;
   display: flex;
   flex-direction: row;
@@ -308,11 +306,11 @@ button, .buttonDel {
   width: 75%;
 }
 
-.col-inner {
+.col-inner, .full-col-inner {
   width:80%;
 }
 
-.col-outer {
+.col-outer, .full-col-outer {
  width:10%;
 }
 
@@ -438,6 +436,19 @@ button, .buttonDel {
     .col-left, .col-right {
       flex-direction: column;
       width: 50%;
+    }
+
+    .full-row {
+      width: 90%;
+      left: 5%;
+    }
+
+    .full-col-inner {
+      width: 90%;
+    }
+
+    .full-col-outer {
+      width: 5%;
     }
 
     .col-extrev-right-sm, .col-extrev-right-lg {
