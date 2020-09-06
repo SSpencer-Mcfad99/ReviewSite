@@ -323,7 +323,7 @@ button, .buttonDel {
 }
 
 .full-col-outer-left {
-  width: 2%;
+  width: 2.5%;
 }
 
 .ext-inner {
@@ -466,6 +466,7 @@ button, .buttonDel {
     .full-col-outer-left {
       width: 4.5%;
     }
+
     .col-extrev-right-sm, .col-extrev-right-lg {
       flex-direction: column;
       justify-content: center;
