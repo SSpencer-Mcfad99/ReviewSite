@@ -18,7 +18,7 @@ nav {
   width: 100%;
   background: #222668;
   flex-direction: column;
-  align-items:center;
+  align-items:flex-start;
 }
 
 nav a {
@@ -69,8 +69,8 @@ h3, label, span {
 
 #logo {
   float: left;
-  width: 100px;
-  height: 60px;
+  width: 127px;
+  height: 70px;
 }
 
 #ign, #destructoid {
@@ -90,6 +90,7 @@ h3, label, span {
 
 .menu {
   float: right;
+  height: 70px;
   text-align: center;
   color: #fff;
   line-height: 2em;
@@ -107,11 +108,10 @@ h3, label, span {
 }
 
 .bar {
-  min-width: 35px;
-  max-width: 45px;
+  width: 50px;
   height: 6px;
   background-color: white;
-  margin: 10px 10px;
+  margin: 12px 10px;
 }
 
 
@@ -429,13 +429,20 @@ button, .buttonDel {
 
     .col-extrev-right-sm, .col-extrev-right-lg {
       flex-direction: column;
-      margin-left: 20px;
+      justify-content: center;
       order: 2;
     }
 
+    .col-extrev-left-lg {
+        margin-left: 20px;
+    }
+
+    .col-extrev-right-lg {
+      margin-right: 20px;
+    }
     .col-extrev-left-sm, .col-extrev-left-lg {
       flex-direction: column;
-      margin-left: 20px;
+      justify-content: center;
       order: 1;
     }
 
