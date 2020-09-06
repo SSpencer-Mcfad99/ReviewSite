@@ -135,6 +135,12 @@ li {
   width: 100%;
 }
 
+.rule {
+  position: relative;
+  left: 25%;
+  width: 60%;
+}
+
 .comp-container, .logo-container {
   display: flex;
   position: relative;
@@ -433,6 +439,11 @@ button, .buttonDel {
     #game-informer {
       width: 100px;
       height: 30px;
+    }
+
+    .rule {
+      left: 0%;
+      width: 100%;
     }
 
     .left-nav {
