@@ -1,5 +1,6 @@
 # CTEC3905 Assignment
-
+ NOTE: THESE NOTES ARE BASED ON THE OLD VERSION OF THE SITE RATHER THAN THE UPDATED VERSION.
+ 
   Below here is a basic summary for all css, html and js files for the website with some discussion on issues faced. After all these are references.
 
   This website is a games review website where a user can store reviews locally and delete/view them.
@@ -8,7 +9,7 @@
   Near the end of the project, I started experimenting with trying to move the reviews from localStorage and instead into a file called reviews.txt.
 However, as I experimented I found that this would be beyond my abilities or requires a js library/server-side language which does not fulfill assessment
 criteria. As a result, I reverted the whole git repo back to a previous state and deleted the branch for some testing involving this also.
- 
+
 ## createreviews.html
 
   The `createreviews.html` file allows for users to give a star rating and a review for a specific game using input fields as well as span elements.  
@@ -73,7 +74,7 @@ old reviews and the new array of reviews is added to localStorage by stringifyin
 ### Challenges faced
   During development, a problem I had was storing the values. I chose to store it into an array right from the start in localStorage but it was always
 finding a way to store it that would allow it to be easily accessible afterwards. The solution to this was using key/value pairs in the array to accessible
-each element and for the 'reviews' localStorage item to essentially be an array of arrays. I used the 3 keys, one for each value from the inputs from the 
+each element and for the 'reviews' localStorage item to essentially be an array of arrays. I used the 3 keys, one for each value from the inputs from the
 `createreviews.html` page and to load the previous state of localStorage item before this. When the reviews are loaded in, they would be parsed with the JSON
 parse command and then the new review would be appended to the end of the list. The updated array would then be set back into localStorage using the name 'reviews'
 again, being stringified before so as localStorage only accepts string values.
@@ -81,8 +82,8 @@ again, being stringified before so as localStorage only accepts string values.
 ## js/loadreviews.js
 
   The `js/loadreviews.js` file clears the table on `viewreviews.html` and then will display all reviews of a specified game if it exists in localStorage.
-It splits the review into rating in the left column and the review itself as well as a button with an event listener that deletes the row in the right column. 
-It creates a new row for each review and goes through the array using a foreach statement that applies function sortReviews to each one. 
+It splits the review into rating in the left column and the review itself as well as a button with an event listener that deletes the row in the right column.
+It creates a new row for each review and goes through the array using a foreach statement that applies function sortReviews to each one.
 
 An alert will be returned if the game doesn't exist in the reviews or if there are no reviews on the site. See comments below for more detail.
 
